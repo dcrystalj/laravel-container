@@ -1,4 +1,7 @@
-FROM adalessa/laravel-container:7.07.07.07.07.07.07.0 apt-get update && apt-get install -y \	
+FROM adalessa/laravel-container:7.0
+
+WORKDIR /tmp
+RUN apt-get update && apt-get install -y \	
     libz-dev \
     libmemcached-dev \
     xz-utils
